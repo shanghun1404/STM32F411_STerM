@@ -78,6 +78,14 @@ void Init() {
 	FTDI_Begin(115200);
 
 	/*
+	 * PuTTY 터미널(USART2에 연결됨)에 "Hello ZETIN"을 출력한다.
+	 * PuTTY_Printf는 starColor.c/starString.c(색상 팔레트, FindColor, xtoi 등)에 의존하며,
+	 * 해당 구현 파일을 External Library/Src에 추가했으므로 정상 링크된다.
+	 * "/g", "/b"는 각각 초록/파랑 색상 지정 코드다(starColor 규격). 줄 끝에서 색은 자동 복원된다.
+	 */
+	PuTTY_Printf("/gHello /bZETIN\n");
+
+	/*
 	 * 1ms 주기로 동작하는 SysTick을 기화한다. custom_delay.h 파일의 Custom_Delay_Get_SysTick
 	 * 현재 SvsTick이 초기화된 시점부터 경과한 시간을 구할 수 있다.
 	 */
