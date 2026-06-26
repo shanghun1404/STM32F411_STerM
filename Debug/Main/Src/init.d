@@ -44,7 +44,8 @@ Main/Src/init.o: ../Main/Src/init.c \
  C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_delay.h \
  C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_filesystem.h \
  C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_flash.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h \
+ ../Core/Inc/Custom_UART_PuTTY.h ../Core/Inc/starString.h
 C:/Users/shang/Desktop/ParkSoYeon/Main/Inc/init.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
@@ -92,3 +93,5 @@ C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_delay.h:
 C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_filesystem.h:
 C:/Users/shang/Desktop/ParkSoYeon/External\ Library/Inc/custom_flash.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h:
+../Core/Inc/Custom_UART_PuTTY.h:
+../Core/Inc/starString.h:

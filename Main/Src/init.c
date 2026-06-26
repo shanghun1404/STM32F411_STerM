@@ -9,6 +9,7 @@
 #include "custom_switch.h"
 #include "custom_filesystem.h"
 #include "stm32f4xx_ll_usart.h"
+#include "Custom_UART_PuTTY.h"
 
 /*
  * syscalls.c에 있는 _io_putchar 재정의
@@ -74,6 +75,7 @@ void Init() {
 	 STM 보드와 컴퓨터 간 UART 통신을 통해 컴퓨터 터미널로 디버깅할 수 있도록 USART2를 활성화한다.
 	 */
 	LL_USART_Enable(USART2);
+	FTDI_Begin(115200);
 
 	/*
 	 * 1ms 주기로 동작하는 SysTick을 기화한다. custom_delay.h 파일의 Custom_Delay_Get_SysTick
